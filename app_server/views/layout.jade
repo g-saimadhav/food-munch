@@ -1,0 +1,208 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Food Munch
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white.fixed-top
+      .container
+        a.navbar-brand(href="#")
+          img.food-munch-logo(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png", class="food-munch-logo")
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNavAltMarkup
+          .navbar-nav.ml-auto
+            a.nav-link.active#navItem1(href="#wcuSection")
+              | Why Choose Us?
+              span.sr-only (current)
+            a.nav-link(href="#exploreMenuSection", id="navItem2") Explore Menu
+            a.nav-link(href="#deliveryPaymentSection", id="navItem3") Delivery & Payment
+            a.nav-link(href="#followUsSection", id="navItem4") Follow Us
+    .banner-section-bg-container.d-flex.justify-content-center.flex-column
+      .text-center
+        h1.banner-heading.mb-3 Get Delicious Food Anytime
+        p.banner-caption.mb-4 Eat Smart & Healthy
+        button.custom-button View Menu
+        button.custom-outline-button Order Now
+    .wcu-section.pt-5.pb-5#wcuSection
+      .container
+        .row
+          .col-12
+            h1.wcu-section-heading Why Choose Us?
+            p.wcu-section-description
+              | We use both original recipes and classic versions of famous food
+              | items.
+          .col-12.col-md-4
+            .wcu-card.p-3.mb-3
+              img.wcu-card-image(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png")
+              h1.wcu-card-title.mt-3 Food Service
+              p.wcu-card-description
+                | Experience fine dining at the comfort of your home. All our
+                | orders are carefully packed and arranged to give you the nothing
+                | less than perfect.
+          .col-12.col-md-4
+            .wcu-card.p-3.mb-3
+              img.wcu-card-image(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png")
+              h1.wcu-card-title.mt-3 Fresh Food
+              p.wcu-card-description
+                | The Fresh Food group provides fresh-cut fruits and vegetables
+                | directly picked from our partner farms and farm houses so that
+                | you always get them tree to plate.
+          .col-12.col-md-4
+            .wcu-card.p-3.mb-3
+              img.wcu-card-image(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png")
+              h1.wcu-card-title.mt-3 Best Offers
+              p.wcu-card-description
+                | Food Coupons & Offers upto
+                span.offers 50% OFF
+                | and Exclusive Promo Codes on All Online Food Orders.
+    .explore-menu-section.pt-5.pb-5#exploreMenuSection
+      .container
+        .row
+          .col-12
+            h1.menu-section-heading Explore Menu
+          .col-12.col-md-6.col-lg-3
+            .shadow.menu-item-card.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png")
+              h1.menu-card-title Non-Veg Starters
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", class="bi bi-arrow-right-short", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                  path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .shadow.menu-item-card.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png")
+              h1.menu-card-title Veg Starters
+              a.menu-item-link(href="")
+                | View all
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                  path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png")
+              h1.menu-card-title Soups
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png")
+              h1.menu-card-title Fish & Seafood
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png")
+              h1.menu-card-title Main Course
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png")
+              h1.menu-card-title Noodles
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png")
+              h1.menu-card-title Salads
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+          .col-12.col-md-6.col-lg-3
+            .menu-item-card.shadow.p-3.mb-3
+              img.menu-item-image.w-100(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png")
+              h1.menu-card-title Desserts
+              a.menu-item-link(href="")
+                | View All
+                svg(width="16px", height="16px", viewBox="0 0 16 16", fill="#d0b200", xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd", d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z")
+    .healthy-food-section.pt-5.pb-5
+      .container
+        .row
+          .col-12.col-md-5
+            .text-center
+              img.healthy-food-section-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png")
+          .col-12.col-md-7
+            h1.healthy-food-section-heading Fresh, Healthy, Organic, Delicious Fruits
+            p.healthy-food-section-description
+              | Say no to harmful chemicals and go fully organic with our range of
+              | fresh fruits and veggies. Pamper your body and your senses with
+              | the true and unadulterated gifts from mother nature. with the true
+              | and unadulterated gifts from mother nature.
+            button.custom-button Watch Video
+    .delivery-and-payment-section.pt-5.pb-5#deliveryPaymentSection
+      .container
+        .row
+          .col-12.col-md-5.order-1.order-md-2
+            .text-center
+              img.delivery-and-payment-section-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png")
+          .col-12.col-md-7.order-2.order-md-1
+            h1.delivery-and-payment-section-heading Delivery and Payment
+            p.delivery-and-payment-section-description
+              | Enjoy hassle-free payment with the plenitude of payment options
+              | available for you. Get live tracking and locate your food on a
+              | live map. It's quite a sight to see your food arrive at your door.
+              | Plus, you get a 5% discount on every order every time you pay
+              | online.
+            button.custom-button Order Now
+            div.mt-3
+              img.payment-card-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png")
+              img.payment-card-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png")
+              img.payment-card-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png")
+              img.payment-card-img(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png")
+    .follow-us-section.pt-5.pb-5#followUsSection
+      .container
+        .row
+          .col-12
+            h1.follow-us-section-heading Follow Us
+          .col-12
+            .d-flex.flex-row.justify-content-center
+              .follow-us-icon-container
+                i.fab.fa-twitter.icon
+              .follow-us-icon-container
+                i.fab.fa-instagram.icon
+              .follow-us-icon-container
+                i.fab.fa-facebook.icon
+    .footer-section.pt-5.pb-5
+      .container
+        .row
+          .col-12.text-center
+            img.food-munch-logo(src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png", class="food-munch-logo")
+            h1.footer-section-mail-id orderfood@foodmunch.com
+            p.footer-section-address 123 Anurag University, Ghatkesar , Hyderabad.
+
+    
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js", integrity="sha384-Pzjw5fPlHPwb8Hl+zFk5bFoJy4N7bcp6h3/JBTVqUstjkgpzz/AvZ4FStZ5B5X2k", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-pzjw5fPlHPwb8Hl+zFk5bFoJy4N7bcp6h3/JBTVqUstjkgpzz/AvZ4FStZ5B5X2k", crossorigin="anonymous")
+  
+        footer 
+          .row 
+            .col-lg-12
+              p &copy; Food Munch 2023
+
+
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+
+
+
+   
+
+            footer
+
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
