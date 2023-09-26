@@ -227,3 +227,7 @@
   font-family: "Roboto";
   font-size: 14px;
 }
+.line {
+  border-bottom: 5px solid #000;
+   /* You can adjust the color and thickness as needed */
+}
