@@ -3,8 +3,8 @@ require('dotenv').config();
 const PORT=process.env.PORT || 3000;
 
 var gracefulShutdown;
-var dbURI = 'mongodb://0.0.0.0:27017/locator';
-if (process.env.NODE_ENV === 'production') {
+var dbURI = 'mongodb://0.0.0.0:27017/fooditems';
+if (process.env.NODE_ENV === 'productions') {
     dbURI = process.env.MONGODB_URI;
 }
 mongoose.connect(dbURI);
